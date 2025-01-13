@@ -1,0 +1,54 @@
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #171933;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    background-color: #663399;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    gap: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    margin-bottom: 2.5rem;
+    color: white;
+
+    &:hover {
+        background-color: #8652bf;
+    }
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    h2 {
+        margin: 0;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    img {
+        border-radius: 1rem 0 0 1rem;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

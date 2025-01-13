@@ -1,4 +1,5 @@
 const btn = document.getElementById('fetch');
+const characterContainer = document.querySelector('.character-container');
 let used = false
 
 /**
@@ -23,7 +24,7 @@ const createCard = (character) => {
     <h2>${character.name}</h2>
     `;
     
-    document.body.appendChild(card);
+    characterContainer.appendChild(card);
 }
 
 btn.addEventListener('click', async () => {
